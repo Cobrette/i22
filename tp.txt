@@ -55,6 +55,6 @@ l'option -t x1.
 
 
 jeux de piste :
-chaine 1 : $ od -j37 -n9 -a valeurs
-chaine 2 :
+chaine 1 : $ od -j37 -N9 -a valeurs
+chaine 2 : $ od -j58 -N4 -a valeurs 
 val : 
