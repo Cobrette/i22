@@ -1,0 +1,60 @@
+                ''' LA COMMANDE OD'''
+
+1.Quelle option permet d'afficher les adresses en hexadécimal au lieu d'octal ?
+
+                --adress-radix=valeurs
+
+2.Quelle option permet d'afficher chaque octet d'un fichier en hexadécimal ?
+
+                 --format=valeurs
+
+3.Quelle option permet de sauter un certain nombre d'octets ?
+
+                --skip-bytes=valeurs
+
+4.Quelle option permet de ne lire qu'un certain nombre d'octets ?
+
+               --read-bytes=valeurs
+
+
+
+           ''' UTILISATION OD '''
+
+1.
+À l'aide de la commande od et de ses différents paramètres,
+retrouvez et affichez chacune des valeurs précédentes, seule.
+Attention, une des valeurs n'utilise peut-être pas l'endianisme habituel.
+
+   la valeur 192, nombre entier non signé codé sur 8 bits  :
+          od -A n -t u1 -N 1 valeurs
+
+   la valeur -1, nombre entier signé codé sur 8 bits :
+          od -j 1 -t d1 -N 1 valeurs
+
+   la valeur -2, nombre entier signé codé sur 16 bits :
+          od -j 2 -A n -t d2 -N 2 valeurs
+
+   la valeur 1633837924, nombre entier non signé codé sur 32 bits :
+          od -j 4 -A n -t u4 --endian=big -N 4 valeurs
+
+   la valeur 1.0, nombre réel codé au format IEEE 754 32 bits (nombre à virgule flottante) :
+          od -j 8 -A n -t f4 -N 4 valeurs
+
+   la valeur -10.25, nombre réel codé au format IEEE 754 64 bits (nombre à virgule flottante) :
+          od -j 12 -A n -t f8 -N 8 valeurs
+
+
+2.
+Pour chacune des valeurs numériques précédentes, calculez la représentation
+théorique en hexadécimal dans le codage indiqué de ces valeurs et vérifiez
+qu'il y a bien concordance entre théorie et pratique en utilisant od avec
+l'option -t x1.
+
+
+
+
+
+jeux de piste :
+chaine 1 : $ od -j37 -n9 -a valeurs
+chaine 2 :
+val : 
