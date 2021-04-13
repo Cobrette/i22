@@ -1,0 +1,13 @@
+#la commande grep 
+#question 1:
+
+CD /PROC/
+NANO CPUINFOgrep "model name"/proc/cpuinfo 
+grep "model name" / proc / cpuinfo
+grep -c "process /proc/cpuinfo
+
+#la commande 'du'
+#question 1:
+
+'du'
+touch /tmp/fichier_vide
