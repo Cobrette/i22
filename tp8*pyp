@@ -8,6 +8,11 @@ grep -c "process /proc/cpuinfo
 
 #la commande 'du'
 #question 1:
-
+dossier home
 'du'
 touch /tmp/fichier_vide
+du /tmp/fichier_vide
+gedit /tmp/fichier_vide
+ecrire quelquels mots
+nano /tmp/fichier_vide
+#la commande ps
